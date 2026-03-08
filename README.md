@@ -38,29 +38,6 @@ A **modern dark-mode web interface** built with Bootstrap that hosts the analyti
 
 ---
 
-## 📂 Project Structure
-
-This structure keeps the project **modular, organized, and easy to navigate**.
-
----
-
-## 📊 Live Interactive Insights
-
-Explore the interactive analytics dashboards and story visualizations below:
-
-🔹 **Interactive Dashboard**  
-https://public.tableau.com/app/profile/aishwarya.dhakephalkar/viz/PRODUCTPLACEMENTANALYSISDASHBOARD/Dashboard  
-
-🔹 **Data Story**  
-https://public.tableau.com/app/profile/aishwarya.dhakephalkar/viz/STORYOFPRODUCTPLACEMENTANALYSISDASHBOARD/ProductPlacementAnalysisstory
-
----
-
-## ⚙️ Quick Start Guide
-
-Follow these steps to run the project locally.
-
-### 1️⃣ Clone the Repository
-
-```bash
-git clone https://github.com/YourUsername/Strategic-Product-Placement-Analysis.git
+--- ## 📂 Project Structure Organized into a professional hierarchy for easy navigation: * **/web-app**: The core application logic (app.py) and UI templates. * **/tableau-project**: The original .twbx workbook and processed datasets. * **/documentation**: A complete audit trail of the 12 mandatory project phases. --- ## 📊 Live Interactive Insights Experience the data story and the interactive dashboard via the links below: > 🖥️ **[View Interactive Dashboard](https://public.tableau.com/app/profile/aishwarya.dhakephalkar/viz/PRODUCTPLACEMENTANALYSISDASHBOARD/Dashboard)** > 📖 **[View the Data Story](https://public.tableau.com/app/profile/aishwarya.dhakephalkar/viz/STORYOFPRODUCTPLACEMENTANALYSISDASHBOARD/ProductPlacementAnalysisstory)** --- ## ⚙️ Quick Start Guide To run this project locally on your machine: 1. **Clone the repository:**
+bash
+   git clone [https://github.com/YourUsername/Strategic-Product-Placement-Analysis.git](https://github.com/YourUsername/Strategic-Product-Placement-Analysis.git) so this is my code and i added my database csv file to it make changes if its necessry in my code
