@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALES | Strategic Product Placement</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #c5a059;
+            --black: #000000;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            background-color: var(--black);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            overflow: hidden; /* STOPS ALL SCROLLING */
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: var(--black);
+            padding: 10px 50px;
+            border-bottom: 1px solid #222;
+            height: 70px;
+        }
+
+        .navbar-brand { font-weight: 800; font-size: 24px; color: white !important; }
+        .nav-link { color: #888 !important; margin: 0 15px; cursor: pointer; transition: 0.3s; }
+        .nav-link:hover, .nav-link.active { color: var(--gold) !important; }
+
+        /* Page Management */
+        .page-content {
+            height: calc(100vh - 70px);
+            width: 100vw;
+            display: none;
+            position: absolute;
+            top: 70px;
+            left: 0;
+        }
+
+        .page-content.active {
+            display: block;
+        }
+
+        /* Home View */
+        #home {
+            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), 
+                        url('https://images.unsplash.com/photo-1534723452862-4c874018d66d?auto=format&fit=crop&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-container {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* FULL SCREEN TABLEAU CONTAINER */
+        .viz-fullscreen {
+            width: 100%;
+            height: 100%;
+            background: white; /* Matches Tableau default background */
+        }
+
+        /* About Section */
+        .about-wrap {
+            padding: 60px;
+            overflow-y: auto;
+            height: 100%;
+        }
+
+        .gold-line { width: 60px; height: 3px; background: var(--gold); margin: 20px 0; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand">SALES</a>
+            <div class="collapse navbar-collapse justify-content-center">
+                <div class="navbar-nav">
+                    <a class="nav-link active" onclick="showPage('home')">Home</a>
+                    <a class="nav-link" onclick="showPage('about')">About</a>
+                    <a class="nav-link" onclick="showPage('dashboard')">DashBoard</a>
+                    <a class="nav-link" onclick="showPage('story')">Story</a>
+                    <a class="nav-link" onclick="showPage('contact')">Contact</a>
+                </div>
+            </div>
+            <button class="btn btn-outline-warning btn-sm" onclick="showPage('dashboard')">GET STARTED</button>
+        </div>
+    </nav>
+
+    <div id="home" class="page-content active">
+        <div class="hero-container">
+            <h1 style="font-size: 4rem; font-weight: 800; letter-spacing: -1px;">Strategic Product<br>Placement Analysis</h1>
+            <p class="fs-4 text-secondary">Advanced Insights & Visual Intelligence</p>
+        </div>
+    </div>
+
+    <div id="about" class="page-content">
+        <div class="about-wrap">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h5 style="color: var(--gold)">ABOUT US</h5>
+                        <h2 class="display-4 fw-bold">Transforming Retail Data into Strategy</h2>
+                        <div class="gold-line"></div>
+                        <p class="text-secondary lead">This project provides a comprehensive look at how product positioning affects bottom-line revenue.</p>
+                        <ul class="list-unstyled mt-4">
+                            <li class="mb-4">
+                                <h5 class="text-white">🚀 Real-time Performance Metrics</h5>
+                                <p class="text-secondary small">Track sales velocity across multiple categories and shelf tiers instantaneously.</p>
+                            </li>
+                            <li class="mb-4">
+                                <h5 class="text-white">🎯 Consumer Behavior Mapping</h5>
+                                <p class="text-secondary small">Understand the "path to purchase" and how end-cap displays drive impulse buying.</p>
+                            </li>
+                            <li class="mb-4">
+                                <h5 class="text-white">📊 Predictive Shelf Allocation</h5>
+                                <p class="text-secondary small">Using historical data to recommend the optimal number of facings for high-demand SKUs.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="dashboard" class="page-content">
+        <div class="viz-fullscreen">
+            <div class='tableauPlaceholder' id='viz_dash_full' style='width:100%; height:100%;'>
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='name' value='PRODUCTPLACEMENTANALYSISDASHBOARD/Dashboard' />
+                    <param name='toolbar' value='yes' />
+                    <param name='device' value='desktop' />
+                </object>
+            </div>
+        </div>
+    </div>
+
+    <div id="story" class="page-content">
+        <div class="viz-fullscreen">
+            <div class='tableauPlaceholder' id='viz_story_full' style='width:100%; height:100%;'>
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='path' value='shared/7MQ25H5S3' />
+                    <param name='toolbar' value='yes' />
+                    <param name='device' value='desktop' />
+                </object>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="page-content">
+        <div class="container py-5 text-center">
+            <h2 class="display-5 fw-bold mb-4">Contact Our Analysts</h2>
+            <p class="text-secondary mb-5">Have questions about the data? Reach out to us below.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-5 text-start bg-dark p-4 rounded">
+                    <p>📍 <strong>Office:</strong> Financial District, Hyderabad</p>
+                    <p>📧 <strong>Email:</strong> retail.insights@sales.com</p>
+                    <hr>
+                    <input type="text" class="form-control bg-black text-white border-secondary mb-3" placeholder="Full Name">
+                    <textarea class="form-control bg-black text-white border-secondary mb-3" rows="3" placeholder="Inquiry"></textarea>
+                    <button class="btn btn-warning w-100">Send Inquiry</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function showPage(pageId) {
+            // Hide all
+            document.querySelectorAll('.page-content').forEach(p => p.classList.remove('active'));
+            // Show target
+            document.getElementById(pageId).classList.add('active');
+            
+            // Nav update
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if(link.getAttribute('onclick').includes(pageId)) link.classList.add('active');
+            });
+
+            // Trigger resize so Tableau recalculates its "Automatic" size
+            setTimeout(() => { window.dispatchEvent(new Event('resize')); }, 100);
+        }
+
+        window.onload = function() {
+            const vizElements = document.querySelectorAll('.tableauViz');
+            vizElements.forEach(viz => {
+                viz.style.width = '100%';
+                viz.style.height = '100%';
+            });
+
+            const script = document.createElement('script');
+            script.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            document.body.appendChild(script);
+
+            // This ensures Tableau stays "Proper" even if you resize the browser
+            window.addEventListener('resize', function() {
+                vizElements.forEach(v => {
+                    v.style.width = '100%';
+                    v.style.height = '100%';
+                });
+            });
+        };
+    </script>
+</body>
+</html>
