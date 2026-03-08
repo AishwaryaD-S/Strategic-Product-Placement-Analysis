@@ -6,11 +6,20 @@
 ## 🚀 Project Overview
 Retailers often lose potential revenue due to poor product positioning and uncompetitive pricing. This project bridges that gap by providing a **full-stack analytics tool**. It combines a sleek **Flask web interface** with an interactive **Tableau Business Intelligence dashboard** to turn raw sales data into actionable store strategies.
 
-### ✨ Key Features
-* **Heat Map Analytics:** Identify "Hot Zones" (End-caps/Eye-level) vs. "Cold Zones."
-* **Price Gap Analysis:** Compare store prices against competitors to find the "sweet spot."
-* **Demographic Filtering:** Tailor store layouts based on customer age and gender trends.
-* **Responsive Web Portal:** A professional dark-mode UI to host the analytics suite.
+## ✨ Key Features
+
+### 🔥 Heat Map Analytics
+Identify high-performing store areas such as **eye-level shelves and end caps (Hot Zones)** and low-performing **Cold Zones** to optimize product placement.
+
+### 💰 Price Gap Analysis
+Compare store product prices with competitors to identify the **optimal price range that maximizes sales and competitiveness**.
+
+### 👥 Demographic Filtering
+Analyze customer behavior based on **age groups and gender trends** to better tailor store layouts and product placement.
+
+### 🌙 Responsive Web Portal
+A **modern dark-mode web interface** built with Bootstrap that hosts the analytics dashboard and project insights.
+
 
 ---
 
