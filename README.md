@@ -17,9 +17,9 @@ Retailers often lose potential revenue due to poor product positioning and uncom
 ## 🛠️ Technology Stack
 | Layer | Technologies |
 | :--- | :--- |
-| **Backend** | Python 3.x, Flask Framework |
-| **Frontend** | HTML5, CSS3, Bootstrap 5 (Responsive Design) |
-| **Data Engine** | Tableau Desktop, Excel/CSV |
+| **Backend** | Python , Flask Framework |
+| **Frontend** | HTML, CSS, Bootstrap 5 (Responsive Design) |
+| **Data Engine** | Tableau Desktop, CSV |
 | **Deployment** | GitHub, Localhost (Flask Server) |
 
 
